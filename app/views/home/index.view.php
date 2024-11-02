@@ -28,7 +28,7 @@
                     <a class="nav-link" href="?controller=menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Statistic</a>
+                    <a class="nav-link" href="?controller=statistic">Statistic</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
