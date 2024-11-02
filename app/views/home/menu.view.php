@@ -20,16 +20,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">Trang Chủ</a>
+                    <a class="nav-link " href="?controller=home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="?controller=menu">Thực Đơn</a>
+                    <a class="nav-link" href="?controller=menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Liên Hệ</a>
+                    <a class="nav-link" href="?controller=statistic">Statistic</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Giới Thiệu</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>

@@ -7,135 +7,12 @@
     <title>Thống kê doanh thu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Thư viện biểu đồ Chart.js -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Đường dẫn tới file CSS -->
+
 </head>
 
 <body>
-    <style>
-        /* Base styles for the body */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            /* Light gray background for contrast */
-            color: #333;
-            /* Dark text color for readability */
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Form container styles */
-        form {
-            max-width: 600px;
-            /* Limit the width of the form */
-            margin: 50px auto;
-            /* Center the form with top margin */
-            padding: 20px;
-            background-color: #fff;
-            /* White background for the form */
-            border-radius: 8px;
-            /* Rounded corners */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            /* Light shadow for depth */
-        }
-
-        /* Styles for each form group */
-        .form-group {
-            margin-bottom: 20px;
-            /* Space between form groups */
-        }
-
-        /* Label styles */
-        label {
-            display: block;
-            /* Make the label a block element */
-            margin-bottom: 5px;
-            /* Space between label and input */
-            font-weight: bold;
-            /* Bold text for labels */
-            color: #555;
-            /* Slightly lighter color for labels */
-        }
-
-        /* Input styles */
-        input[type="date"] {
-            width: 100%;
-            /* Full width input */
-            padding: 10px;
-            /* Padding for better touch target */
-            border: 1px solid #ccc;
-            /* Light border */
-            border-radius: 4px;
-            /* Rounded corners */
-            font-size: 1rem;
-            /* Base font size */
-            transition: border-color 0.3s;
-            /* Smooth transition for border color */
-        }
-
-        /* Input focus styles */
-        input[type="date"]:focus {
-            border-color: #007bff;
-            /* Change border color on focus */
-            outline: none;
-            /* Remove the default outline */
-            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-            /* Soft shadow on focus */
-        }
-
-        /* Button styles */
-        .btn {
-            background-color: #6DCACA;
-            /* Primary button color */
-            color: #fff;
-            /* White text color */
-            border: none;
-            /* Remove default border */
-            padding: 10px 20px;
-            /* Padding for button */
-            border-radius: 4px;
-            /* Rounded corners */
-            font-size: 1rem;
-            /* Base font size */
-            cursor: pointer;
-            /* Pointer cursor on hover */
-            transition: background-color 0.3s;
-            /* Smooth transition for background color */
-        }
-
-        /* Button hover styles */
-        .btn:hover {
-            background-color: #0056b3;
-            /* Darker shade on hover */
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            form {
-                padding: 15px;
-                /* Reduce padding on smaller screens */
-            }
-
-            input[type="date"],
-            .btn {
-                font-size: 0.9rem;
-                /* Slightly smaller font size on mobile */
-            }
-        }
-
-        .form-input-day {
-            width: 400px;
-            height: 100%;
-        }
-
-        .chart-revenue {
-            height: 100%;
-        }
-
-        h1,
-        p,
-        label {
-            color: #6DCACA;
-        }
-    </style>
+  
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -144,21 +21,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="?controller=menu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Statistic</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="?controller=home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="?controller=menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="?controller=statistic">Statistic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
         </div>
     </nav>
 
