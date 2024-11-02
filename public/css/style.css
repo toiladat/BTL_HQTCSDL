@@ -1,0 +1,63 @@
+body {
+    background-color: #ffffff; /* Nền trắng */
+}
+
+footer {
+    background-color: #ffffff; /* Nền của footer trắng */
+    color: #ff7f50; /* Màu chữ cam */
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d; /* Màu text muted */
+}
+
+/* Đặt kiểu cho Navbar */
+.navbar {
+    background-color: #6f42c1; /* Màu nền của navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho navbar */
+}
+
+.navbar-brand {
+    font-family: 'Arial', sans-serif; /* Font chữ cho brand */
+    font-size: 1.8rem; /* Kích thước chữ lớn hơn */
+    font-weight: bold; /* Chữ đậm */
+    color: #ff7f50; /* Màu chữ cam */
+    text-transform: uppercase; /* Chữ in hoa */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.navbar-brand:hover {
+    color: #ff4500; /* Màu chữ khi hover */
+}
+
+.navbar-toggler {
+    border: none; /* Ẩn viền của nút toggle */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Ẩn viền focus */
+}
+
+.navbar-nav .nav-link {
+    color: #ff7f50; /* Màu chữ của các link cam */
+    font-size: 1.1rem; /* Kích thước chữ cho link */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff4500; /* Màu chữ khi hover */
+}
+
+/* Đặt kiểu cho footer */
+footer {
+    background-color: #000000; /* Nền của footer trắng */
+    color: #ff7f50; /* Màu chữ cam */
+}
