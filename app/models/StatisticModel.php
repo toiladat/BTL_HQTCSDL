@@ -36,4 +36,13 @@ class StatisticModel
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
+// Hàm lấy doanh thu theo món ăn giữa hai tháng
+public function getRevenueByFood($startDate, $endDate) {
+  $stmt = $this->pdo->prepare("CALL fnRevenueByFood(:startDate, :endDate)");
+  $stmt->bindParam(':startDate', $startDate);
+  $stmt->bindParam(':endDate', $endDate);
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 }

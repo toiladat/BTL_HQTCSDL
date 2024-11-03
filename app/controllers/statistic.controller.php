@@ -27,7 +27,16 @@ require_once APP_ROOT.'/app/models/StatisticModel.php';
       $currentDateTime = new DateTime($currentDate); // Chuyển đổi thành đối tượng DateTime
       include APP_ROOT.'/app/views/home/inventory.view.php';
     }
-    public function statsticCustomer(): void{
+    public function statisticRevenueByFood() {
+      $startDate = !empty($_POST['start_date']) ? $_POST['start_date'] : date('Y-m-01',strtotime('first day of last month'));
+      $endDate = !empty($_POST['end_date']) ? $_POST['end_date'] : date('Y-m-t');
+  
+      $revenueByFood = $this->statisticModel->getRevenueByFood($startDate, $endDate);
+  
+      include APP_ROOT.'/app/views/home/revenuebyfood.view.php';
+  }
+  
+    public function statsticCustomer(){
       echo 'trang thong ke khach hang';
     }
   }
