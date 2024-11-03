@@ -4,10 +4,13 @@ require_once APP_ROOT . "/app/libs/dbConnection.libs.php";
 require_once APP_ROOT . "/app/controllers/home.controllers.php";
 require_once APP_ROOT . "/app/controllers/menu.controllers.php";
 require_once APP_ROOT . "/app/controllers/statistic.controller.php";// Mapping controller names to their respective classes
+require_once APP_ROOT . "/app/controllers/bill.controller.php";
 $controllers = [
     'home' => 'HomeController',
     'menu' => 'MenuController',
-    'statistic' => 'StatisticController',  // Dùng chung với MenuController (nếu thực tế cần khác, có thể tạo StatisticController)
+    'statistic' => 'StatisticController',
+    'addBill'=>'BillController',
+      // Dùng chung với MenuController (nếu thực tế cần khác, có thể tạo StatisticController)
 ];
 
 // Xác định controller và action

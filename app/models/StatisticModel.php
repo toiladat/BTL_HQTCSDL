@@ -30,4 +30,10 @@ class StatisticModel
     
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
+
+  public function getInventories(){
+    $stmt = $this->pdo->prepare("select * from ingredients ");
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
 }

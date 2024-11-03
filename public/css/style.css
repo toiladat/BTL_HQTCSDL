@@ -75,7 +75,7 @@ footer {
 
 /* Form container styles */
 form {
-    max-width: 600px;
+    max-width: 900px;
     /* Limit the width of the form */
     margin: 50px auto;
     /* Center the form with top margin */
@@ -172,10 +172,6 @@ input[type="date"]:focus {
     }
 }
 
-.form-input-day {
-    width: 400px;
-    height: 100%;
-}
 
 .chart-revenue {
     height: 100%;
