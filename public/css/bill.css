@@ -1,0 +1,47 @@
+    /* Tùy chỉnh CSS cho checkbox */
+    .form-check {
+      position: relative;
+      padding-left: 30px;
+      /* Tạo khoảng cách cho checkbox */
+      cursor: pointer;
+      user-select: none;
+      /* Ngăn không cho người dùng chọn văn bản */
+      
+    }
+
+
+    .form-check-input{
+      width: 15px;
+      height: 15px;
+    }
+
+    /* Tùy chỉnh CSS */
+    .card {
+      border: 1px solid #6DCACA;
+      /* Màu viền của card */
+      border-radius: 5px;
+      margin-right: 15px;
+      /* Bo góc card */
+    }
+
+    .form-check-label {
+
+      margin-left: 10px;
+      /* Khoảng cách giữa checkbox và label */
+    }
+
+
+    .quantity-input {
+      border: 1px solid #6DCACA;
+      color :#6DCACA;
+      margin-left: 10px;
+      /* Khoảng cách giữa số lượng và label */
+    }
+
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+      /* Căn chỉnh nội dung */
+      align-items: center;
+      /* Căn giữa theo chiều dọc */
+    }
