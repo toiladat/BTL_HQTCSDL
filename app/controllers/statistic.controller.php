@@ -10,12 +10,12 @@ require_once APP_ROOT.'/app/models/StatisticModel.php';
 
     public function statisticDaily() {
       //tra ve giao dien
-      $minDay=$this->statisticModel->getMinDay();
+      $minDay= date('Y-m-01');
       $today = new DateTime();
       $today=$today->format("Y-m-d"); // Ví dụ: 2024-11-02
       $beginDay = !empty($_POST['start_date']) ? $_POST['start_date'] : $minDay;
       $endDay = !empty($_POST['end_date']) ? $_POST['end_date'] : $today;
-      
+
       
       $Revenue = $this->statisticModel->getRevenue($beginDay,$endDay);
 
@@ -27,7 +27,7 @@ require_once APP_ROOT.'/app/models/StatisticModel.php';
       $currentDateTime = new DateTime($currentDate); // Chuyển đổi thành đối tượng DateTime
       include APP_ROOT.'/app/views/home/inventory.view.php';
     }
-    public function statsticCustomer(){
+    public function statsticCustomer(): void{
       echo 'trang thong ke khach hang';
     }
   }

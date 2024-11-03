@@ -67,7 +67,7 @@ class BillModel
   {
     // Chuẩn bị câu lệnh SQL để chèn dữ liệu
     $stmt = $this->pdo->prepare("INSERT INTO Bill (customerID, accountID, idTable, totalPrice, discount, timeIn, status) 
-                                   VALUES (:customerID, :accountID, :idTable, :totalPrice, :discount,  NOW(), 'Đã thanh toán')");
+                                   VALUES (:customerID, :accountID, :idTable, :totalPrice, :discount,  '2024-9-10', 'Đã thanh toán')");
 
     // Gán giá trị cho các tham số
     $stmt->bindParam(':customerID', $customerId, PDO::PARAM_INT);
