@@ -27,7 +27,7 @@ require_once APP_ROOT.'/app/models/StatisticModel.php';
       $currentDateTime = new DateTime($currentDate); // Chuyển đổi thành đối tượng DateTime
       include APP_ROOT.'/app/views/home/inventory.view.php';
     }
-    public function statsticCustomer(): void{
+    public function statsticCustomer(){
       echo 'trang thong ke khach hang';
     }
   }

@@ -96,6 +96,9 @@
                     <li>
                         <a href="?controller=statistic&action=statisticInventory" class="nav-link">Inventory</a>
                     </li>
+                    <li>
+                        <a href="?controller=statistic&action=statisticRevenueByFood" class="nav-link">Revenue By Food</a>
+                    </li>
                 </ul>
             </div>
         </div>
