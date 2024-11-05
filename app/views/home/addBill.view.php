@@ -28,6 +28,9 @@
                         <a class="nav-link" href="?controller=menu">Menu</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="?controller=statistic&action=getStatistic">Loyal Customer</a>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link" href="?controller=statistic&action=statisticDaily">Revenue</a>
                     </li>
                     <li>
