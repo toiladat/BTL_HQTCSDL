@@ -263,8 +263,7 @@ button:hover, .btn:hover {
                                 <td>" . htmlspecialchars($customer['CustomerID']) ." </td>
                                 <td>" . htmlspecialchars($customer['CustomerName']) . "</td>
                                 <td>" . htmlspecialchars($customer['CountlBills']) . "</td>
-                                <td>" . htmlspecialchars($customer['TotalBills']) . " VNĐ</td>
-                            </tr>";
+                                <td>" . htmlspecialchars(number_format($customer['TotalBills'], 0, ',', '.')) . " VNĐ</td>                            </tr>";
                         }
                     } else {
                         echo "<tr><td colspan='3' class='text-center'>Không có dữ liệu để hiển thị</td></tr>";

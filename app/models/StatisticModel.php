@@ -50,10 +50,6 @@ public function getTopCustomers($top, $beginDay, $endDay) {
         
   $beginDay = date('Y-m-d', strtotime($beginDay));
   $endDay = date('Y-m-d', strtotime($endDay));
-  
-  $beginDay = $_POST['start_date'];
-  $endDay = $_POST['end_date'];
-  $top = (int)$_POST['top_customers'];
   // Sử dụng biến $top trong câu lệnh SQL
   $stmt = $this->pdo->prepare("CALL fn_TopCustomers(:top, :beginDay, :endDay);");
   $stmt->bindParam(':top', $top);
