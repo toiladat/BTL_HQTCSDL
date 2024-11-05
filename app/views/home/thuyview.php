@@ -230,7 +230,7 @@ button:hover, .btn:hover {
             </div>
             <div class="col-md-4">
                 <label for="end_date" class="form-label">Ngày kết thúc:</label>
-                <input type="date" id="end_date" name="end_date" class="form-control" value="<?php echo $beginDay; ?>" required>
+                <input type="date" id="end_date" name="end_date" class="form-control" value="<?php echo $endDay; ?>" required>
             </div>
             <div class="col-md-4">
                 <label for="top_customers" class="form-label">Số khách hàng hàng đầu:</label>
