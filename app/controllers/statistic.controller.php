@@ -35,7 +35,25 @@ require_once APP_ROOT.'/app/models/StatisticModel.php';
   
       include APP_ROOT.'/app/views/home/revenuebyfood.view.php';
   }
+  public function getStatistic() {
+
+
+    $minDay=$this->statisticModel->getMinDay();
+
+    $today = new DateTime();
+    $today=$today->format("Y-m-d"); // Ví dụ: 2024-11-02
+    
+    // Lấy tham số từ GET request
+    $top = isset($_GET['top']) ? (int)$_GET['top'] : 5; // Mặc định là 2 nếu không có giá trị
   
+    $beginDay = isset($_GET['beginDay']) ? $_GET['beginDay'] : $minDay;
+    $endDay = isset($_GET['endDay']) ? $_GET['endDay'] :  $today;
+    
+    // Gọi model để lấy danh sách khách hàng hàng đầu
+    $customers = $this->statisticModel->getTopCustomers($top, $beginDay, $endDay);
+    //var_dump($customers); // Kiểm tra dữ liệu trả về
+    include APP_ROOT.'/app/views/home/thuyview.php';
+  }
     public function statsticCustomer(){
       echo 'trang thong ke khach hang';
     }
