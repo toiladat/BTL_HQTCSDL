@@ -126,7 +126,7 @@
           $expirationDate = new DateTime($inventory['expirationDate']);
           $interval = $currentDateTime->diff($expirationDate);
           ?>
-          <tr class="<?php echo ($interval->days <= 100 && $interval->invert == 0) ? 'warming-restock' : ''; ?>">
+          <tr class="<?php echo ($interval->days <= 50 && $interval->invert == 0) ? 'warming-restock' : ''; ?>">
             <td><?php echo htmlspecialchars($inventory['id']); ?></td>
             <td><?php echo htmlspecialchars($inventory['name']); ?></td>
             <td><?php echo htmlspecialchars($inventory['quantity']); ?></td>
